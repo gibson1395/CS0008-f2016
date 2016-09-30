@@ -4,7 +4,7 @@ system = str(input('Would you like to use USC or Metric: '))
 distance = float(input('Enter the distance driven: '))
 gasUsed = float(input('Enter the gasoline used: '))
 
-# USC to metric
+# USC to metric:
 metricDistance = float(format(distance * 1.60934, '9.3f'))
 metricGas = float(format(gasUsed * 3.78541, '9.3f'))
 
