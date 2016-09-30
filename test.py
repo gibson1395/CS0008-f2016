@@ -8,7 +8,7 @@ gasUsed = float(input('Enter the gasoline used: '))
 metricDistance = float(format(distance * 1.60934, '9.3f'))
 metricGas = float(format(gasUsed * 3.78541, '9.3f'))
 
-# Metric to USC
+# Metric to USC:
 usDistance = float(format(distance * 0.621371, '9.3f'))
 usGas = float(format(gasUsed * 0.264172, '9.3f'))
 # depending on which system the user
