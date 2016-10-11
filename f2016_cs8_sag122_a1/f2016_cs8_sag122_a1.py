@@ -5,12 +5,12 @@ distance = float(input('Enter the distance driven: '))
 gasUsed = float(input('Enter the gasoline used: '))
 
 # USC to metric:
-metricDistance = float(format(distance * 1.60934, '9.3f'))
-metricGas = float(format(gasUsed * 3.78541, '9.3f'))
+metricDistance = float(format(distance * 1.60934, '10.3f'))
+metricGas = float(format(gasUsed * 3.78541, '10.3f'))
 
 # Metric to USC:
-usDistance = float(format(distance * 0.621371, '9.3f'))
-usGas = float(format(gasUsed * 0.264172, '9.3f'))
+usDistance = float(format(distance * 0.621371, '10.3f'))
+usGas = float(format(gasUsed * 0.264172, '10.3f'))
 # depending on which system the user
 # entered, those numbers will be converted to the other system
 if system == str('USC'):
@@ -23,19 +23,19 @@ else:
     print('An error occurred')
 
 # fuel consumption rating
-fuelConsumptionUSA = float(format(usDistance / usGas, '9.3f'))
-fuelConsumptionMetric = float(format(((100 * metricGas) / metricDistance), '9.3f'))
+fuelConsumptionUSA = float(format(usDistance / usGas, '10.3f'))
+fuelConsumptionMetric = float(format(((100 * metricGas) / metricDistance), '10.3f'))
 # print the fuel consumption rating
 print('The fuel consumption in miles per gallon:', fuelConsumptionUSA)
 print('The fuel consumption in liters per 100 kilometers:', fuelConsumptionMetric)
 # give the consumption rating a category based on 1/100Km
 if fuelConsumptionMetric > 20:
     print('The gas consumption rating is extremely poor')
-elif fuelConsumptionMetric < 15 and fuelConsumptionMetric <= 20:
+elif fuelConsumptionMetric > 15 and fuelConsumptionMetric <= 20:
     print('The gas consumption rating is poor')
-elif fuelConsumptionMetric < 10 and fuelConsumptionMetric <= 15:
+elif fuelConsumptionMetric > 10 and fuelConsumptionMetric <= 15:
     print('The gas consumption rating is average')
-elif fuelConsumptionMetric < 8 and fuelConsumptionMetric <= 10:
+elif fuelConsumptionMetric > 8 and fuelConsumptionMetric <= 10:
     print('The gas consumption rating is good')
 elif fuelConsumptionMetric <= 8:
     print('The gas consumption rating is excellent')
