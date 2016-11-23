@@ -1,0 +1,12 @@
+This program reads the master file and its contents using various for loops, dictionaries, and lists.
+
+After reading these files, the program tells the user:
+
+• the number of files read in input
+• the total number of lines read
+• the total distance run (aka the sum of all the distances loaded from provided files)
+• the total distance run for each individual participant
+• the individual maximum distance run and by which participant
+• the individual minimum distance run and by which participant
+• the report if there are any participants that appears more than once, how many times and their names
+• the total number of participants

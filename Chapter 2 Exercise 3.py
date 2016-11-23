@@ -1,12 +1,22 @@
-# This program calculates the number of acres in the tract
+def main():
+    # Obtain all the information.
+    loan = float(input('Enter your car payment: '))
+    insurance = float(input('Insurance amount: '))
+    gas = float(input('Enter monthly gas amount: '))
+    oil = float(input('Enter monthly amount used on oil: '))
+    tire = float(input('Enter amount spent on tires for the year: '))
+    maintenance = float(input('Enter monthly maintenance cost: '))
+    calc_monthly (loan, insurance, gas, oil, tire, maintenance)
 
-# Get the number of square meters of land from the user
-square_meters = float(input('Enter the total square meters of land: '))
+def calc_monthly(loan, insurance, gas, oil, tire, maintenance):
+    #calculate and print monthly cost.
+    total_monthly_cost = loan + insurance + gas + oil + tire + maintenance
+    print('This is the monthly cost: $',format(total_monthly_cost, ',.2f'), sep='')
+    calc_annual(total_monthly_cost)
 
-# Take the number of square meters the user entered
-# divided by number of square meters in an acre
-total_number_of_acres = square_meters / 4046.8564224
+def calc_annual(monthly):
+    #calculate and print annual cost.
+    total_annual = monthly * 12
+    print('This is the annual cost: $',format(total_annual, ',.2f'), sep='')
 
-# print the total number of acres the user has
-print ('The total number of acres is: ' +
-       format(total_number_of_acres, '.2f'))
+main()
