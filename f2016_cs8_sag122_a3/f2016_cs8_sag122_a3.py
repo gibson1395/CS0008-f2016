@@ -1,9 +1,15 @@
+#
+# MN: header with user, instructor and course info is missing
+#
+# Notes:
+# MN: need more comments!!!
+#
+
 # create global dictionary
 global_dictionary = {}
 # name masterfile
+# MN: why not asking the user for hte master file name?
 mfilename = 'f2016_cs8_a3.data.txt'
-
-
 
 # open masterfile
 mFile = open(mfilename, 'r')
@@ -27,8 +33,10 @@ for filename in mFile:
         else:
             global_dictionary[name] = [value]
         lineCount += 1
-# close files
+    # close files
+    # MN: here you are closing the data file within the loop
     file.close()
+# MN: here you are closing the master list file
 mFile.close()
 
 # create counter for total distance for the loop
@@ -51,6 +59,8 @@ names = []
 # create for loop to find mins and maxs of participants and how many are repeated participants
 for key in global_dictionary:
     lvalue = global_dictionary[key]
+    # MN: with the following if statements you are computing min and max on single runs
+    #     and not on the total run for each participant
     if max_value < max(lvalue):
         max_value = max(lvalue)
         max_name = key
@@ -77,3 +87,5 @@ print('Total number of participant:', len(global_dictionary))
 print()
 print('Number of participants \n '
       'with multiple records     :', numPart)
+
+# MN: you are missing creation the output file
