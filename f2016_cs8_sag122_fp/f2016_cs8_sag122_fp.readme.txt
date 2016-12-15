@@ -1,0 +1,9 @@
+The assignment gave me trouble when trying to incorporate the new methods.
+I had a mixture of your and my program, but there were substantial errors I could not seem to figure out.
+Once all was said and done, I was able to create the initial requirements but had trouble with the
+__str__() and getting the name, distance, and runs. I was unsure how to get that information
+as it is similar to the output file with different formatting. I really tried to use the book for examples, but there
+were no similar examples found that used data files. Just wanted to clarify so you could more efficiently look over the program.
+
+Thanks and have a great winter break,
+Scott Gibson
