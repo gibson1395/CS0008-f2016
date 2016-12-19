@@ -4,6 +4,10 @@
 # date       : 2016/12/15
 # class      : CS0008-f2016
 # instructor : Max Novelli (man8@pitt.edu)
+#
+# Notes:
+# MN: it is OK to re-use code, but you need to personalize it!!!
+#
 
 #
 # class participant definition according to specs from header
